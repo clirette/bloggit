@@ -1,0 +1,26 @@
+<h2>Bookmark Details</h2>
+<div *ngIf="bookmark" class="bookmark panel">
+	<h2>
+		{{bookmark.title}}
+		<div routerLink="update" class="btn btn-primary pull-right">Update Bookmark</div>
+	</h2>
+	<p>{{bookmark.url}}</p>
+	<table class="table table-bordered table-condensed">
+	    <thead>
+	        <tr class="info">
+	            <th>Last Updated</th>
+	            <th>Priority</th>
+	        </tr>
+	    </thead>
+	    <tbody>
+	        <tr>
+	            <td>{{bookmark.lastUpdated | date:'medium'}}</td>
+	            <td>{{bookmark.priority}}</td>
+	        </tr>
+	    </tbody>
+	</table>
+</div>
+<div *ngIf="error" class="alert alert-danger">
+   <span class="glyphicon glyphicon-exclamation-sign"></span>
+   {{error.error.message ? error.error.message : 'There was an error retrieving bookmarks.'}}
+</div>

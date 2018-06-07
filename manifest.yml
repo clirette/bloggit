@@ -1,0 +1,10 @@
+applications:
+- name: bloggit
+  memory: 1024M
+  health-check-type: port
+  stack: cflinuxfs2
+  buildpack: java_buildpack
+
+  path: target/bloggit-1.0-SNAPSHOT.jar
+  routes:
+  - route: bloggit-cal-backend.cfapps.io

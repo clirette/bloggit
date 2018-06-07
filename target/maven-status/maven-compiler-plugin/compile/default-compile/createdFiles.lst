@@ -1,0 +1,14 @@
+com/cal/bloggit/converters/ILocalDateTimeConverter.class
+com/cal/bloggit/Application$1.class
+com/cal/bloggit/converters/impl/LocalDateTimeConverter.class
+com/cal/bloggit/accessors/IBookmarkAccessor.class
+com/cal/bloggit/controllers/BookmarkController.class
+com/cal/bloggit/domains/converters/LocalDateTimeConverter.class
+com/cal/bloggit/domains/DomainPost.class
+com/cal/bloggit/domains/Bookmark.class
+com/cal/bloggit/Application.class
+com/cal/bloggit/accessors/IPostAccessor.class
+com/cal/bloggit/configs/SwaggerConfig.class
+com/cal/bloggit/managers/IPostManager.class
+com/cal/bloggit/controllers/PostController.class
+com/cal/bloggit/managers/impl/PostManager.class

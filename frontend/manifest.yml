@@ -1,0 +1,8 @@
+applications:
+- name: bloggit-client
+  memory: 64M
+  health-check-type: port
+  buildpack: staticfile_buildpack
+  path: dist/
+  routes:
+  - route: bloggit-cal-client.cfapps.io

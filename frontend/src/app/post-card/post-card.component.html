@@ -1,0 +1,7 @@
+<div *ngIf="post" class="panel panel-default">
+   <div class="panel-heading">
+   	<a [routerLink]="post.postId">{{post.title | uppercase}}</a>
+   <div class="glyphicon glyphicon-remove pull-right" (click)="deletePost()"></div>
+   </div>
+   <div class="panel-body"  (click)="updateTitle()">{{post.body}}</div>
+</div>

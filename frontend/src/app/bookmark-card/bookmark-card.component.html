@@ -1,0 +1,7 @@
+<div *ngIf="bookmark" class="panel panel-default">
+	<div class="panel-heading">
+		<a [routerLink]="bookmark.bookmarkId">{{bookmark.title | uppercase}}</a>
+		<div class="glyphicon glyphicon-remove pull-right" (click)="deleteBookmark()"></div>
+	</div>
+	<div class="panel-body"  (click)="updateTitle()">{{bookmark.url}}</div>
+</div>

@@ -1,0 +1,11 @@
+update bookmarks set created_by = 'Chase Lirette';
+update bookmarks set created_on = '2018-02-07 12:30:00.000' where bookmark_id = 1;
+update bookmarks set created_on = '2018-02-07 12:35:00.000' where bookmark_id = 2;
+update bookmarks set created_on = '2018-02-07 12:40:00.000' where bookmark_id = 3;
+update bookmarks set created_on = '2018-02-07 12:45:00.000' where bookmark_id = 4;
+update bookmarks set created_on = '2018-02-07 12:50:00.000' where bookmark_id = 5;
+update bookmarks set created_on = '2018-02-07 12:55:00.000' where bookmark_id = 6;
+update bookmarks set created_on = '2018-02-07 13:00:00.000' where bookmark_id = 7;
+update bookmarks set created_on = '2018-02-07 13:05:00.000' where bookmark_id = 8;
+update bookmarks set created_on = '2018-02-07 13:10:00.000' where bookmark_id = 9;
+update bookmarks set created_on = '2018-02-07 13:15:00.000' where bookmark_id = 10;

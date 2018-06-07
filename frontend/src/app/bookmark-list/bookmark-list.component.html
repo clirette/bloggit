@@ -1,0 +1,10 @@
+<h2>
+	Bookmarks
+	<div routerLink="create" class="btn btn-primary pull-right">Create Bookmark</div>
+</h2>
+<p>Select a bookmark from the list below.</p>
+<bookmark-card *ngFor="let bookmark of bookmarks | bookmarkSort" [bookmark]="bookmark" (bookmarkDeleted)="handleBookmarkDeleted($event)"></bookmark-card>
+<div *ngIf="error" class="alert alert-danger">
+   <span class="glyphicon glyphicon-exclamation-sign"></span>
+   {{error.error.message ? error.error.message : 'There was an error retrieving bookmarks.'}}
+</div>
